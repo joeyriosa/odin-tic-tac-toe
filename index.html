@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <h1>Tic Tac Toe</h1>
+    <div class="player">
+        <div id="player1Name"></div>
+        <button id="changePlayer1" class="small-button">Change Name</button>
+    </div>
+    <div class="player">
+        <div id="player2Name"></div>
+        <button id="changePlayer2" class="small-button">Change Name</button>
+    </div>
+
+    <dialog id="nameDialog" class="modal-dialog">
+        <form method="dialogForm" class="modal-content">
+            <p>
+                <label>
+                    Enter name:
+                    <input type="text" id="dialogInput" required >
+                </label>
+            </p>
+            <div>
+                <input type="submit" id="saveDialogButton" value="Save" class="dialog-button">
+                <input type="button" id="closeDialogButton" value="Cancel" class="dialog-button">
+            </div>
+        </form>
+    </dialog>
+
+    <div id="playerTurn"></div>
+    <div id="main">
+        <div class="cell" data-row="0" data-col="0"></div>
+        <div class="cell" data-row="0" data-col="1"></div>
+        <div class="cell" data-row="0" data-col="2"></div>
+        <div class="cell" data-row="1" data-col="0"></div>
+        <div class="cell" data-row="1" data-col="1"></div>
+        <div class="cell" data-row="1" data-col="2"></div>
+        <div class="cell" data-row="2" data-col="0"></div>
+        <div class="cell" data-row="2" data-col="1"></div>
+        <div class="cell" data-row="2" data-col="2"></div>
+    </div>
+    <div id="gameResult"></div>
+    <button id="newGameButton" class="big-button">New Game</button>
+    <script src="./scripts/main.js"></script>
+</body>
+</html>
